@@ -8,15 +8,21 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "XFAreaPickerView/XFAreaPickerView.h"
+
+@interface ViewController () <XFAreaPickerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *txt;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,5 +31,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)click:(id)sender
+{
+    XFAreaPickerView *areaPicker = [[XFAreaPickerView alloc]initWithDelegate:self];
+    areaPicker.isHidden = NO;
+}
+
+- (void)areaPickerView:(XFAreaPickerView *)areaPickerView didSelectArea:(NSString *)area
+{
+    _txt.text = area;
+}
 
 @end

@@ -15,6 +15,9 @@
 		6572288A1F0F60F6002DD975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657228881F0F60F6002DD975 /* LaunchScreen.storyboard */; };
 		657228951F0F60F6002DD975 /* XFAreaPickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657228941F0F60F6002DD975 /* XFAreaPickerDemoTests.m */; };
 		657228A01F0F60F6002DD975 /* XFAreaPickerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572289F1F0F60F6002DD975 /* XFAreaPickerDemoUITests.m */; };
+		657228B11F0F6155002DD975 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 657228AE1F0F6155002DD975 /* area.plist */; };
+		657228B21F0F6155002DD975 /* XFAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 657228B01F0F6155002DD975 /* XFAreaPickerView.m */; };
+		657228B41F0F6582002DD975 /* XFAreaPicker.gif in Resources */ = {isa = PBXBuildFile; fileRef = 657228B31F0F6582002DD975 /* XFAreaPicker.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		6572289B1F0F60F6002DD975 /* XFAreaPickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XFAreaPickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6572289F1F0F60F6002DD975 /* XFAreaPickerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFAreaPickerDemoUITests.m; sourceTree = "<group>"; };
 		657228A11F0F60F6002DD975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		657228AE1F0F6155002DD975 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
+		657228AF1F0F6155002DD975 /* XFAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFAreaPickerView.h; sourceTree = "<group>"; };
+		657228B01F0F6155002DD975 /* XFAreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFAreaPickerView.m; sourceTree = "<group>"; };
+		657228B31F0F6582002DD975 /* XFAreaPicker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = XFAreaPicker.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		6572286E1F0F60F6002DD975 = {
 			isa = PBXGroup;
 			children = (
+				657228B31F0F6582002DD975 /* XFAreaPicker.gif */,
 				657228791F0F60F6002DD975 /* XFAreaPickerDemo */,
 				657228931F0F60F6002DD975 /* XFAreaPickerDemoTests */,
 				6572289E1F0F60F6002DD975 /* XFAreaPickerDemoUITests */,
@@ -101,6 +109,7 @@
 		657228791F0F60F6002DD975 /* XFAreaPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				657228AD1F0F6155002DD975 /* XFAreaPickerView */,
 				6572287D1F0F60F6002DD975 /* AppDelegate.h */,
 				6572287E1F0F60F6002DD975 /* AppDelegate.m */,
 				657228801F0F60F6002DD975 /* ViewController.h */,
@@ -138,6 +147,16 @@
 				657228A11F0F60F6002DD975 /* Info.plist */,
 			);
 			path = XFAreaPickerDemoUITests;
+			sourceTree = "<group>";
+		};
+		657228AD1F0F6155002DD975 /* XFAreaPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				657228AE1F0F6155002DD975 /* area.plist */,
+				657228AF1F0F6155002DD975 /* XFAreaPickerView.h */,
+				657228B01F0F6155002DD975 /* XFAreaPickerView.m */,
+			);
+			path = XFAreaPickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6572288A1F0F60F6002DD975 /* LaunchScreen.storyboard in Resources */,
+				657228B41F0F6582002DD975 /* XFAreaPicker.gif in Resources */,
+				657228B11F0F6155002DD975 /* area.plist in Resources */,
 				657228871F0F60F6002DD975 /* Assets.xcassets in Resources */,
 				657228851F0F60F6002DD975 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				657228821F0F60F6002DD975 /* ViewController.m in Sources */,
+				657228B21F0F6155002DD975 /* XFAreaPickerView.m in Sources */,
 				6572287F1F0F60F6002DD975 /* AppDelegate.m in Sources */,
 				6572287C1F0F60F6002DD975 /* main.m in Sources */,
 			);
